@@ -219,6 +219,14 @@ main {
   max-width: 760px;
 }
 
+.portfolio-main-card {
+  cursor: zoom-in;
+}
+
+.portfolio-main-image {
+  cursor: zoom-in;
+}
+
 .portfolio-lead {
   max-width: 760px;
   color: var(--muted);
@@ -343,12 +351,15 @@ main {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+  touch-action: pan-y;
 }
 
 .lightbox-content img {
   width: 100%;
   height: auto;
   display: block;
+  user-select: none;
+  pointer-events: none;
 }
 
 .lightbox-caption {
@@ -374,6 +385,32 @@ main {
 
 .lightbox-close:hover {
   background: rgba(255, 255, 255, 0.18);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.lightbox-prev {
+  left: 1rem;
+}
+
+.lightbox-next {
+  right: 1rem;
 }
 
 .contact-card {

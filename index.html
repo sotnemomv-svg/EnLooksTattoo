@@ -63,8 +63,8 @@
       </div>
 
       <div class="portfolio-grid single-card">
-        <article class="portfolio-card">
-          <img src="assets/hero.jpg" alt="Imagem principal do portfólio">
+        <article class="portfolio-card portfolio-main-card">
+          <img src="assets/hero.jpg" alt="Imagem principal do portfólio" class="portfolio-main-image">
           <div class="card-overlay">
             <a class="overlay-button show-gallery-button" href="#portfolio-details" data-target="portfolio-details">Ver mais</a>
           </div>
@@ -123,7 +123,9 @@
   <div class="lightbox-overlay" id="lightbox">
     <div class="lightbox-content">
       <button class="lightbox-close" id="lightbox-close" aria-label="Fechar imagem">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior">‹</button>
       <img id="lightbox-image" src="" alt="Imagem ampliada do portfólio">
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Próxima imagem">›</button>
       <p id="lightbox-caption"></p>
     </div>
   </div>
