@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EnLooks Tattoo — arte exclusiva em tatuagens com precisão e personalidade.">
+  <title>EnLooks Tattoo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="topbar">
+      <a class="brand" href="#inicio">
+        <img src="assets/logo.png" alt="Logo EnLooks Tattoo" onerror="this.onerror=null; this.src='assets/logo.svg'">
+        <span>ENLOOKS</span>
+      </a>
+      <div class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">Arte exclusiva</p>
+        <h1>EnLooks <span>Tattoo</span></h1>
+        <p class="hero-subtitle">Precision e estilo em cada traço</p>
+        <p class="lead">Tatuagens com personalidade, precisão e identidade visual forte para quem quer algo único.</p>
+        <a class="button" href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noreferrer">Agendar pelo WhatsApp</a>
+        <div class="hero-meta">
+          <span>+55 11 98829-0854</span>
+          <span>Instagram @enlookstattoo</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img class="hero-logo" src="assets/logo.png" alt="Logo EnLooks Tattoo" onerror="this.onerror=null; this.src='assets/logo.svg'">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about" id="sobre">
+      <div class="section-heading">
+        <p class="eyebrow">Quem sou</p>
+        <h2>Sobre</h2>
+      </div>
+      <div class="about-grid">
+        <p>Cada tatuagem conta uma história. Meu objetivo é transformar sua ideia em uma arte única, executada com técnica, dedicação e criatividade.</p>
+        <p>Trabalho com hora marcada, materiais descartáveis e ambiente esterilizado para que sua experiência seja tão marcante quanto o resultado final.</p>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="section-heading">
+        <p class="eyebrow">Trabalhos</p>
+        <h2>Portfólio</h2>
+      </div>
+
+      <div class="portfolio-grid single-card">
+        <article class="portfolio-card">
+          <img src="assets/hero.jpg" alt="Imagem principal do portfólio">
+          <div class="card-overlay">
+            <a class="overlay-button show-gallery-button" href="#portfolio-details" data-target="portfolio-details">Ver mais</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="portfolio-footer">Clique em “Ver mais” para ver o restante das imagens.</p>
+    </section>
+
+    <section class="section portfolio-details" id="portfolio-details">
+      <div class="section-heading">
+        <p class="eyebrow">Mais fotos</p>
+        <h2>Outras artes</h2>
+      </div>
+      <div class="gallery-grid">
+        <article class="portfolio-card">
+          <img src="assets/portfolio-1.jpg" alt="Arte adicional 1">
+        </article>
+        <article class="portfolio-card">
+          <img src="assets/portfolio-2.jpg" alt="Arte adicional 2">
+        </article>
+        <article class="portfolio-card">
+          <img src="assets/portfolio-3.jpg" alt="Arte adicional 3">
+        </article>
+        <article class="portfolio-card">
+          <img src="assets/portfolio-4.jpg" alt="Arte adicional 4">
+        </article>
+        <article class="portfolio-card">
+          <img src="assets/portfolio-5.jpg" alt="Arte adicional 5">
+        </article>
+        <article class="portfolio-card">
+          <img src="assets/fox.jpg" alt="Fox tatuagem">
+        </article>
+      </div>
+      <p class="portfolio-footer">Quer ver o portfólio completo? <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noreferrer">@enlookstattoo</a></p>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="section-heading">
+        <p class="eyebrow">Fale comigo</p>
+        <h2>Contato</h2>
+      </div>
+
+      <div class="contact-card">
+        <a href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noreferrer">Instagram</a>
+        <p>+55 11 98829-0854</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> EnLooks Tattoo. Todos os direitos reservados.</p>
+  </footer>
+
+  <div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Fechar imagem">×</button>
+      <img id="lightbox-image" src="" alt="Imagem ampliada do portfólio">
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
