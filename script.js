@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
-  const portfolioImages = Array.from(document.querySelectorAll('.gallery-grid .portfolio-card img'));
+  const mainPortfolioImage = document.querySelector('.portfolio-main-image');
+  const galleryImages = Array.from(document.querySelectorAll('.gallery-grid .portfolio-card img'));
+  const portfolioImages = mainPortfolioImage ? [mainPortfolioImage, ...galleryImages] : galleryImages;
   let activeImageIndex = 0;
   let startX = 0;
 
@@ -18,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openLightbox = (index) => {
     if (!lightbox || !lightboxImage || !lightboxCaption) return;
+    if (!portfolioImages.length) return;
     activeImageIndex = index;
     const image = portfolioImages[activeImageIndex];
     if (!image) return;
@@ -25,12 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImage.alt = image.alt;
     lightboxCaption.textContent = image.alt || 'Imagem do portfólio';
     lightbox.classList.add('visible');
+    document.body.style.overflow = 'hidden';
   };
 
   const closeLightbox = () => {
     if (!lightbox || !lightboxImage) return;
     lightbox.classList.remove('visible');
     lightboxImage.src = '';
+    document.body.style.overflow = '';
   };
 
   const navigateLightbox = (direction) => {
@@ -51,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     showGalleryButton.addEventListener('click', openGallery);
 
-    const mainPortfolioImage = document.querySelector('.portfolio-main-image');
     const mainPortfolioCard = document.querySelector('.portfolio-main-card');
 
     if (mainPortfolioImage) {
@@ -60,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mainPortfolioCard) {
       mainPortfolioCard.addEventListener('click', (event) => {
-        if (event.target !== showGalleryButton) {
+        if (event.target !== showGalleryButton && event.target !== mainPortfolioImage) {
           openGallery(event);
         }
       });

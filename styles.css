@@ -330,11 +330,11 @@ main {
 .lightbox-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.96);
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
   z-index: 999;
 }
 
@@ -344,10 +344,10 @@ main {
 
 .lightbox-content {
   position: relative;
-  max-width: 1000px;
-  width: min(100%, 1000px);
+  width: min(100%, 980px);
+  max-height: 92vh;
   background: rgba(10, 10, 10, 0.98);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
