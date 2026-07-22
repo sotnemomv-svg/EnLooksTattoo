@@ -3,15 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const topbar = document.querySelector('.topbar');
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
-  const navWhatsappBtn = document.getElementById('nav-whatsapp-btn');
-  const navWhatsappMenu = document.getElementById('nav-whatsapp-menu');
   const heroWhatsappBtn = document.getElementById('hero-whatsapp-btn');
   const heroWhatsappMenu = document.getElementById('hero-whatsapp-menu');
-  const portfolioDetails = document.getElementById('portfolio-details');
-  const showGalleryBtn = document.getElementById('show-gallery-btn');
   const lightbox = document.getElementById('lightbox');
   const lightboxImage = document.getElementById('lightbox-image');
   const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxCount = document.getElementById('lightbox-count');
   const lightboxClose = document.getElementById('lightbox-close');
   const lightboxPrev = document.getElementById('lightbox-prev');
   const lightboxNext = document.getElementById('lightbox-next');
@@ -68,15 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const closeAllDropdowns = () => {
-    [navWhatsappBtn, heroWhatsappBtn, whatsappToggle].forEach((btn) => {
+    [heroWhatsappBtn, whatsappToggle].forEach((btn) => {
       if (btn) btn.setAttribute('aria-expanded', 'false');
     });
-    [navWhatsappMenu, heroWhatsappMenu, whatsappMenu].forEach((menu) => {
+    [heroWhatsappMenu, whatsappMenu].forEach((menu) => {
       if (menu) menu.hidden = true;
     });
   };
 
-  setupDropdown(navWhatsappBtn, navWhatsappMenu, closeAllDropdowns);
   setupDropdown(heroWhatsappBtn, heroWhatsappMenu, closeAllDropdowns);
   setupDropdown(whatsappToggle, whatsappMenu, closeAllDropdowns);
 
@@ -118,6 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImage.src = image.currentSrc || image.src;
     lightboxImage.alt = image.alt;
     lightboxCaption.textContent = image.alt || 'Imagem do portfólio';
+    if (lightboxCount) {
+      lightboxCount.textContent = `${activeImageIndex + 1} / ${portfolioImages.length}`;
+    }
     lightbox.classList.add('visible');
     document.body.style.overflow = 'hidden';
   };
@@ -134,13 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextIndex = (activeImageIndex + direction + portfolioImages.length) % portfolioImages.length;
     openLightbox(nextIndex);
   };
-
-  if (portfolioDetails && showGalleryBtn) {
-    showGalleryBtn.addEventListener('click', () => {
-      portfolioDetails.classList.add('visible');
-      portfolioDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }
 
   if (lightbox && lightboxImage && lightboxCaption && lightboxClose) {
     portfolioImages.forEach((image, index) => {
