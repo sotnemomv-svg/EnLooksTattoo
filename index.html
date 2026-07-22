@@ -3,124 +3,323 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="EnLooks Tattoo — arte exclusiva em tatuagens com precisão e personalidade.">
-  <title>EnLooks Tattoo</title>
+  <meta name="description" content="EnLooks Tattoo — transforme sua ideia em uma obra de arte. Tatuagens exclusivas em São Paulo. Promoção: 5 tatuagens até 5cm por R$ 200. Av. dos Sertanistas, 1030C.">
+  <meta name="keywords" content="tatuagem, tattoo, EnLooks Tattoo, estúdio de tatuagem, São Paulo, blackwork, realismo">
+  <meta name="author" content="EnLooks Tattoo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://enlookstattoo.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://enlookstattoo.com/">
+  <meta property="og:title" content="EnLooks Tattoo — Qualidade, arte e atitude">
+  <meta property="og:description" content="Transforme sua ideia em uma obra de arte. Agende pelo WhatsApp. Av. dos Sertanistas, 1030C.">
+  <meta property="og:site_name" content="EnLooks Tattoo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EnLooks Tattoo">
+  <meta name="twitter:description" content="Qualidade, arte e atitude feita pra marcar!">
+
+  <title>EnLooks Tattoo — Tatuagens exclusivas em São Paulo</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Kaushan+Script&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TattooParlor",
+    "name": "EnLooks Tattoo",
+    "url": "https://enlookstattoo.com",
+    "description": "Qualidade, arte e atitude feita pra marcar!",
+    "telephone": ["+5511991470286", "+5511988290854"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. dos Sertanistas, 1030C",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "sameAs": ["https://instagram.com/enlookstattoo"]
+  }
+  </script>
 </head>
 <body>
-  <header class="hero" id="inicio">
-    <nav class="topbar">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" id="inicio">
+    <nav class="topbar" aria-label="Navegação principal">
       <a class="brand" href="#inicio">
-        <img src="assets/logo.png" alt="Logo EnLooks Tattoo" onerror="this.onerror=null; this.src='assets/logo.svg'">
-        <span>ENLOOKS</span>
+        <img src="assets/logo.png" alt="EnLooks Tattoo" width="48" height="48" fetchpriority="high" onerror="this.onerror=null; this.src='assets/logo.svg'">
+        <span class="brand-text"><em>EnLooks</em> TATTOO</span>
       </a>
-      <div class="nav-links">
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
         <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
-        <a href="#portfolio">Portfólio</a>
+        <a href="#portfolio">Trabalhos</a>
+        <a href="#promocao">Promoção</a>
+        <a href="#cuidados">Cuidados</a>
         <a href="#contato">Contato</a>
+      </div>
+
+      <div class="nav-whatsapp" id="nav-whatsapp">
+        <button class="nav-whatsapp-btn" id="nav-whatsapp-btn" aria-expanded="false" aria-controls="nav-whatsapp-menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Fale no WhatsApp
+          <svg class="chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </button>
+        <div class="nav-whatsapp-menu" id="nav-whatsapp-menu" hidden>
+          <a href="https://wa.me/5511991470286?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 99147-0286</a>
+          <a href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 98829-0854</a>
+        </div>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <div class="hero-copy">
-        <p class="eyebrow">Arte exclusiva</p>
-        <h1>EnLooks <span>Tattoo</span></h1>
-        <p class="hero-subtitle">Precision e estilo em cada traço</p>
-        <p class="lead">Tatuagens com personalidade, precisão e identidade visual forte para quem quer algo único.</p>
-        <a class="button" href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noreferrer">Agendar pelo WhatsApp</a>
-        <div class="hero-meta">
-          <span>+55 11 98829-0854</span>
-          <span>Instagram @enlookstattoo</span>
-        </div>
-      </div>
+    <div class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-      <div class="hero-visual">
-        <img class="hero-logo" src="assets/logo.png" alt="Logo EnLooks Tattoo" onerror="this.onerror=null; this.src='assets/logo.svg'">
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <h1>
+            <span class="hero-line">Transforme sua ideia</span>
+            <span class="hero-line">em uma obra de</span>
+            <span class="hero-arte">ARTE</span>
+          </h1>
+
+          <p class="hero-tagline">Qualidade, arte e atitude</p>
+
+          <div class="hero-actions">
+            <button class="btn-whatsapp btn-whatsapp-lg" id="hero-whatsapp-btn" aria-expanded="false" aria-controls="hero-whatsapp-menu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              Agendar pelo WhatsApp
+            </button>
+            <div class="hero-whatsapp-menu" id="hero-whatsapp-menu" hidden>
+              <a href="https://wa.me/5511991470286?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 99147-0286</a>
+              <a href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 98829-0854</a>
+            </div>
+          </div>
+
+          <ul class="hero-badges">
+            <li>
+              <span class="badge-icon" aria-hidden="true">✦</span>
+              Higiene e<br>Segurança
+            </li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">✦</span>
+              Profissional<br>Experiente
+            </li>
+            <li>
+              <span class="badge-icon" aria-hidden="true">✦</span>
+              Atendimento<br>Personalizado
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-logo-side reveal reveal-delay" aria-hidden="true">
+          <img src="assets/logo.png" alt="" width="280" height="280" fetchpriority="high" onerror="this.onerror=null; this.src='assets/logo.svg'">
+        </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section about" id="sobre">
-      <div class="section-heading">
-        <p class="eyebrow">Quem sou</p>
-        <h2>Sobre</h2>
-      </div>
-      <div class="about-grid">
-        <p>Cada tatuagem conta uma história. Meu objetivo é transformar sua ideia em uma arte única, executada com técnica, dedicação e criatividade.</p>
-        <p>Trabalho com hora marcada, materiais descartáveis e ambiente esterilizado para que sua experiência seja tão marcante quanto o resultado final.</p>
-      </div>
-    </section>
-
-    <section class="section portfolio" id="portfolio">
-      <div class="section-heading">
-        <p class="eyebrow">Trabalhos</p>
-        <h2>Portfólio</h2>
-      </div>
-
-      <div class="portfolio-grid single-card">
-        <article class="portfolio-card portfolio-main-card">
-          <img src="assets/hero.jpg" alt="Imagem principal do portfólio" class="portfolio-main-image">
-          <div class="card-overlay">
-            <a class="overlay-button show-gallery-button" href="#portfolio-details" data-target="portfolio-details">Ver mais</a>
+  <main id="conteudo">
+    <section class="promo-banner" id="promocao">
+      <div class="container">
+        <div class="promo-inner reveal">
+          <div class="promo-visual">
+            <img src="assets/promocao.jpg" alt="Promoção EnLooks Tattoo — 5 tatuagens até 5cm por R$ 200" width="900" height="400" loading="lazy" decoding="async">
           </div>
-        </article>
+          <div class="promo-actions">
+            <a class="btn-whatsapp-outline" href="https://wa.me/5511991470286?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20promo%C3%A7%C3%A3o%20de%205%20tatuagens." target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              (11) 99147-0286
+            </a>
+            <a class="btn-whatsapp-outline" href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20promo%C3%A7%C3%A3o%20de%205%20tatuagens." target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+              (11) 98829-0854
+            </a>
+          </div>
+        </div>
       </div>
-
-      <p class="portfolio-footer">Clique em “Ver mais” para ver o restante das imagens.</p>
     </section>
 
-    <section class="section portfolio-details" id="portfolio-details">
-      <div class="section-heading">
-        <p class="eyebrow">Mais fotos</p>
-        <h2>Outras artes</h2>
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <h2 class="section-title reveal">Nossos Trabalhos</h2>
+
+        <div class="portfolio-row reveal">
+          <article class="work-card">
+            <img src="assets/hero.jpg" alt="Imagem principal do portfólio" class="portfolio-main-image" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+          <article class="work-card">
+            <img src="assets/portfolio-1.jpg" alt="Arte adicional 1" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+          <article class="work-card">
+            <img src="assets/portfolio-2.jpg" alt="Arte adicional 2" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+          <article class="work-card">
+            <img src="assets/portfolio-3.jpg" alt="Arte adicional 3" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+          <article class="work-card">
+            <img src="assets/portfolio-4.jpg" alt="Arte adicional 4" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+          <article class="work-card">
+            <img src="assets/portfolio-5.jpg" alt="Arte adicional 5" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+        </div>
+
+        <div class="portfolio-more-wrap reveal">
+          <button class="btn-outline-gold show-gallery-button" id="show-gallery-btn">Ver mais trabalhos ›</button>
+        </div>
+
+        <p class="portfolio-note reveal">Quer ver o portfólio completo? <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noopener noreferrer">@enlookstattoo</a></p>
       </div>
-      <div class="gallery-grid">
-        <article class="portfolio-card">
-          <img src="assets/portfolio-1.jpg" alt="Arte adicional 1">
-        </article>
-        <article class="portfolio-card">
-          <img src="assets/portfolio-2.jpg" alt="Arte adicional 2">
-        </article>
-        <article class="portfolio-card">
-          <img src="assets/portfolio-3.jpg" alt="Arte adicional 3">
-        </article>
-        <article class="portfolio-card">
-          <img src="assets/portfolio-4.jpg" alt="Arte adicional 4">
-        </article>
-        <article class="portfolio-card">
-          <img src="assets/portfolio-5.jpg" alt="Arte adicional 5">
-        </article>
-        <article class="portfolio-card">
-          <img src="assets/fox.jpg" alt="Fox tatuagem">
-        </article>
+    </section>
+
+    <section class="portfolio-details" id="portfolio-details">
+      <div class="container">
+        <h2 class="section-title reveal">Outras artes</h2>
+        <div class="portfolio-row portfolio-row-extra reveal">
+          <article class="work-card">
+            <img src="assets/fox.jpg" alt="Fox tatuagem" width="280" height="380" loading="lazy" decoding="async">
+          </article>
+        </div>
+        <p class="portfolio-note reveal">Clique em “Ver mais” para ver o restante das imagens.</p>
       </div>
-      <p class="portfolio-footer">Quer ver o portfólio completo? <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noreferrer">@enlookstattoo</a></p>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container">
+        <h2 class="section-title reveal">Sobre</h2>
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <p>Cada tatuagem conta uma história. Meu objetivo é transformar sua ideia em uma arte única, executada com técnica, dedicação e criatividade.</p>
+          </article>
+          <article class="about-card reveal reveal-delay">
+            <p>Trabalho com hora marcada, materiais descartáveis e ambiente esterilizado para que sua experiência seja tão marcante quanto o resultado final.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="cuidados">
+      <div class="container">
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M16 24l5 5 11-11" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Tintas Premium</h3>
+            <p>Qualidade e segurança em cada traço, com materiais de alto padrão.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><rect x="12" y="8" width="24" height="32" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M18 16h12M18 24h12M18 32h8" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Equipamentos Esterilizados</h3>
+            <p>Segurança em cada detalhe, com materiais descartáveis e ambiente higiênico.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 36V16l16-8 16 8v20" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="18" y="26" width="12" height="10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Ambiente Profissional</h3>
+            <p>Conforto e confiança para uma experiência marcante do início ao fim.</p>
+          </article>
+          <article class="feature-card reveal reveal-delay">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><circle cx="24" cy="18" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 40c0-8 6-14 14-14s14 6 14 14" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Atendimento Personalizado</h3>
+            <p>Sua ideia, nosso compromisso — cada projeto é único e feito sob medida.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="section contact" id="contato">
-      <div class="section-heading">
-        <p class="eyebrow">Fale comigo</p>
-        <h2>Contato</h2>
-      </div>
-
-      <div class="contact-card">
-        <a href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noreferrer">WhatsApp</a>
-        <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noreferrer">Instagram</a>
-        <p>+55 11 98829-0854</p>
+      <div class="container">
+        <div class="contact-map reveal">
+          <iframe
+            title="Localização EnLooks Tattoo — Av. dos Sertanistas, 1030C"
+            src="https://maps.google.com/maps?q=Av.+dos+Sertanistas,+1030C,+S%C3%A3o+Paulo,+SP&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> EnLooks Tattoo. Todos os direitos reservados.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col reveal">
+        <h3>Onde estamos</h3>
+        <p class="footer-address">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+          Av. dos Sertanistas, 1030C<br>São Paulo — SP
+        </p>
+        <a class="btn-outline-gold btn-sm" href="https://maps.google.com/?q=Av.+dos+Sertanistas,+1030C" target="_blank" rel="noopener noreferrer">Ver no mapa</a>
+      </div>
+
+      <div class="footer-col footer-center reveal">
+        <img class="footer-logo" src="assets/logo.png" alt="EnLooks Tattoo" width="120" height="120" loading="lazy" onerror="this.onerror=null; this.src='assets/logo.svg'">
+        <div class="footer-social">
+          <a href="https://instagram.com/enlookstattoo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+          </a>
+          <a href="https://wa.me/5511991470286" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col reveal">
+        <h3>Fale conosco</h3>
+        <p class="footer-desc">Dois números para melhor atendimento!</p>
+        <div class="footer-whatsapp">
+          <a class="btn-whatsapp-outline" href="https://wa.me/5511991470286?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            (11) 99147-0286
+          </a>
+          <a class="btn-whatsapp-outline" href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            (11) 98829-0854
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="container footer-bar-inner">
+        <p>© <span id="year"></span> EnLooks Tattoo | Todos os direitos reservados</p>
+        <p class="footer-tagline">Qualidade, arte e atitude feita pra marcar!</p>
+      </div>
+    </div>
   </footer>
 
-  <div class="lightbox-overlay" id="lightbox">
+  <div class="whatsapp-float" id="whatsapp-float">
+    <div class="whatsapp-float-menu" id="whatsapp-menu" hidden>
+      <p>Escolha o atendimento:</p>
+      <a href="https://wa.me/5511991470286?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 99147-0286</a>
+      <a href="https://wa.me/5511988290854?text=Ol%C3%A1!%20Quero%20agendar%20uma%20tatuagem." target="_blank" rel="noopener noreferrer">(11) 98829-0854</a>
+    </div>
+    <button class="whatsapp-float-btn" id="whatsapp-toggle" aria-expanded="false" aria-controls="whatsapp-menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.75.75 0 0 0 .957.957l4.458-1.495A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      Fale agora pelo WhatsApp
+    </button>
+  </div>
+
+  <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Galeria ampliada">
     <div class="lightbox-content">
       <button class="lightbox-close" id="lightbox-close" aria-label="Fechar imagem">×</button>
       <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior">‹</button>
@@ -130,6 +329,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
